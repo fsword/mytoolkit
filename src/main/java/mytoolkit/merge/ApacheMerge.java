@@ -17,7 +17,12 @@ public class ApacheMerge {
         List<Item> items = Item.allItems();
         makeOrderIds1(items);
         makeOrderIds2(items);
-        String idString = makeOrderIds3(items);
+        String idString = StringUtils.join(ListUtils.transformedList(items, new Transformer() {
+            public Object transform(Object input) {
+                return ((Item)input).getOrderId();
+            }
+        }),",");
+//        String idString = makeOrderIds3(items);
 
         Map<Integer,Order> orderMap = new HashMap<Integer, Order>();
         for(Order order: Order.findOrders(idString)){

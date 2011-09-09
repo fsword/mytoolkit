@@ -20,10 +20,10 @@ public class SpringMain {
         ds.setPassword("labs");
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(ds);
-        List list = jdbcTemplate.queryForList("SELECT id,name FROM features");
+        List list = jdbcTemplate.queryForList("SELECT id,nick FROM users");
         for(Object obj: list){
             for(Map.Entry entry: ((Map<String,Object>)obj).entrySet()){
-                System.out.print(entry.getKey()+": "+entry.getValue());
+                System.out.print(entry.getKey()+": "+entry.getValue()+" ");
             }
             System.out.println();
         }

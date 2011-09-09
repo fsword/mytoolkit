@@ -1,6 +1,6 @@
 package mytoolkit.beanutil;
 
-public class Teacher {
+public class Person {
 	private Integer age;
 	private String name;
 
@@ -20,12 +20,12 @@ public class Teacher {
 	public void dosth(){
 		System.out.println("do by " + name);
 	}
-	public Teacher(Integer age, String name) {
+	public Person(Integer age, String name) {
 		this.age = age;
 		this.name = name;
 	}
 	
-	public Teacher(){
+	public Person(){
 		
 	}
 }

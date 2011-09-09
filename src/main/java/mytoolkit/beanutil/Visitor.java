@@ -4,34 +4,33 @@ import org.springframework.beans.BeanUtils;
 
 public class Visitor {
 
-	private Teacher teacher;
+	private Person person;
 
-    public Visitor(Teacher teacherData) {
+    public Visitor(Person person) {
 
-//        this.teacher = teacherData;
-    teacher=new Teacher();
-
-    BeanUtils.copyProperties(teacherData,teacher);
+        /** 错误的用法 */
+        //this.person = person;
+        /** 正确的用法 */
+    	this.person=new Person();
+    	BeanUtils.copyProperties(person,this.person);
 
     }
-
-//    //??Teacher??
 
     public void hello(){
 		System.out.println("hello world");
 	}
 
-	public Teacher getTeacher() {
-		return teacher;
+	public Person getTeacher() {
+		return person;
 	}
 
-	public void setTeacher(Teacher teacher) {
+	public void setTeacher(Person teacher) {
         
-		this.teacher = teacher;
+		this.person = teacher;
 	}
 
 	public void visit(){
-		teacher.setName(teacher.getName() + " changed");
-		teacher.dosth();
+		person.setName(person.getName() + " changed");
+		person.dosth();
 	}
 }

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset1" name="My Fileset" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/mytoolkit/delegate/spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -10,6 +19,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mytoolkit-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.0.1" level="project" />
@@ -23,17 +41,18 @@
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils-core:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC02" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:2.5.6.SEC02" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:2.5.6.SEC02" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:2.5.6.SEC02" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:2.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:2.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:2.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:2.5.6" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:2.5.6.SEC02" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:2.5.6" level="project" />
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.3" level="project" />
     <orderEntry type="library" name="Maven: commons-dbutils:commons-dbutils:1.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:r06" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:1.8.0" level="project" />
   </component>
 </module>
 

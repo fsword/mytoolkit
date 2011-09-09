@@ -18,7 +18,7 @@ public class Main {
       HttpClient client = new DefaultHttpClient();
       InputStream in = null;
       try {
-          HttpResponse resp = client.execute(new HttpHost("jakarta.apache.org"), new HttpGet("/"));
+          HttpResponse resp = client.execute(new HttpHost("docs.google.com"), new HttpGet("/"));
           // execute method and handle any error responses.
           in = resp.getEntity().getContent();
           for(Object result: IOUtils.readLines(in)){

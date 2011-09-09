@@ -5,10 +5,10 @@ package mytoolkit.cpconflict;
  * Date: Oct 14, 2010
  * Time: 10:28:50 AM
  */
-public class SomeBO /*extends BaseBO*/{
+public class SomeBO extends BaseBO{
 
-    public void doExecute(int id){
-        System.out.println("I'm exciting with:"+id);
+    public void doExecute(Integer id){
+        System.out.println("I'm excuting with:"+id);
     }
 
 }

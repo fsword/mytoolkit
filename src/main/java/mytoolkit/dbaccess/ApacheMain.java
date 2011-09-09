@@ -24,10 +24,10 @@ public class ApacheMain {
         QueryRunner run = new QueryRunner(ds);
         // Execute the query and get the results back from the handler
         try {
-            List<Map<String, Object>> results = run.query("SELECT id,name FROM features", new MapListHandler());
+            List<Map<String, Object>> results = run.query("SELECT id,nick FROM users", new MapListHandler());
             for(Map<String,Object> row: results){
                 for(Map.Entry entry: row.entrySet()){
-                    System.out.print(entry.getKey()+": "+entry.getValue());
+                    System.out.print(entry.getKey()+": "+entry.getValue()+" ");
                 }
                 System.out.println();
             }
